@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaWeb | Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">NovaWeb</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-banner">
+            <h1>Contact Us</h1>
+            <p>We would love to hear from you.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Get In Touch</h2>
+            <p>Fill in the form below to share your message.</p>
+
+            <form class="contact-form"
+                onsubmit="event.preventDefault(); alert('Thank you! Your demo form was submitted.');">
+
+                <label for="name">Full Name</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" required></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 NovaWeb. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
